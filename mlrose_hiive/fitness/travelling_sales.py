@@ -143,7 +143,7 @@ class TravellingSales:
         nodes.reshape((2, nodes.size // 2))
         fitness = np.linalg.norm(nodes[1:] - nodes[:-1], axis=1).sum()
 
-        return fitness
+        return -1 * fitness
 
     def __calculate_fitness_by_distance(self, state):
 
